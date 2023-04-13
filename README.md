@@ -1,1 +1,1 @@
-# github_exercise
+# github_exercises
