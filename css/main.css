@@ -143,6 +143,15 @@ html {
   margin-left: 50%;
 }
 
+.icons{
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  text-decoration: none;
+}
+
 .component_feature{
   background-color: rgb(202, 202, 202);
   font-size: 100%;
@@ -414,6 +423,8 @@ footer{
 .nav{
   display: grid;
   grid-template-columns: auto auto auto;
+  width: 130%;
+  margin-top: 10%;
 }
 
 .footer__title{
@@ -429,16 +440,16 @@ footer{
   color: white;
   list-style: none;
   font-family: Lexend Mega, sans-serif;
-  font-size: 30%;
+  font-size: 50%;
   width: 90%;
   /* padding-left: 12%; */
-  letter-spacing: 30%;
+  /* letter-spacing: 30%; */
 }
 
-/* .link_name{
-  font-size: 20px;
-  margin-bottom: 20px;
-} */
+.link_name{
+  font-size: 12px;
+
+}
 
 .footer_box a{ 
   color: rgb(255, 255, 255);
@@ -450,3 +461,73 @@ footer{
 .footer_box li{
   margin-bottom: 20px;
 } 
+
+.footer__wrapper{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.footer__subscribe{
+  width: 40%;
+  margin-left: 50%;
+  margin-top: 7%;
+}
+
+.footer__subscribe-title{
+  font-family: Lexend Mega, sans-serif;
+  color: white;
+  font-size: 70%;
+}
+
+.footer__subscribe-context{
+  color: white;
+  font-size: 65%;
+  width: 110%;
+  margin-top: 5%;
+}
+
+.email{
+  color: white;
+  font-size: 65%;
+  width: 110%;
+  margin-top: 5%;
+}
+
+hr{
+  width: 110%;
+}
+
+.privacy{
+  font-family: Lexend Mega, sans-serif;
+  color: white;
+  font-size: 50%;
+}
+
+.line{
+  width: 272%;
+  margin-top: 10%;
+}
+
+
+.bottom{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 3%;
+  padding-bottom: 4%;
+  margin-top: 4%;
+}
+
+.term{
+  font-family: Lexend Mega, sans-serif;
+  color: white;
+  font-size: 50%;
+
+
+}
+
+.copyright{
+  font-family: Lexend Mega, sans-serif;
+  color: white;
+  font-size: 50%;
+  margin-left: 32%;
+}
