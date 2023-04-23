@@ -2,7 +2,7 @@
     --font-serif: Lora, serif;
     --font-sans-seif: Lexend Mega
     ,sans-serif;
-    --ivory: #fffbf7;
+    --ivory: #f8f6f1;
     --light--blue: #49a7db;
     --dark--gray: #333333;
     --white: #ffffff;
@@ -39,6 +39,16 @@ html {
     margin: 5px;
   }
 
+  .article{
+    background-color: #f8f6f1;
+    height: 450px;
+    width: 45%;
+  }
+
+  .text-wrap{
+    padding-top: 10px;
+    margin-left: 14%;
+  }
 
   .article-title{
     font-weight: lighter;
@@ -68,18 +78,25 @@ html {
     width: 350px;
   }
 
+  .btn{
+    margin-top: 30px;
+  }
+
   .article-button{
     font-family: Lexend Mega, sans-serif;
     font-weight: normal;
     font-size: 50%;
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    width: 250px;
-    height: 40px;
+    border: .5px solid black;
     margin-left: 9%;
-    text-align: center;
-    padding-top: 13px;
+    /* text-align: center */
+    text-decoration: none;
+    padding: 15px 55px;
+    color: black;
+    filter: alpha(opacity=90);
   }
+
+  .article-button:hover {opacity: 0.7}
 
   .component_button{
     background-color: rgb(202, 202, 202);
@@ -87,7 +104,9 @@ html {
     border-radius: 4px;
     padding: 8px; 
     margin: 5px;
+    margin-top: 5%;
   }
+
   .links{
     align-items: center;
     list-style-type: none;
@@ -119,7 +138,15 @@ html {
   display: flex;
   justify-content: space-around;
   height: 100%;
+}
+
+.nav-list a{
   text-decoration: none;
+  color: black;
+}
+
+.nav-list li:hover {
+  text-decoration:underline;
 }
 
 .nav-list li{ 
@@ -128,6 +155,7 @@ html {
   font-weight: normal;
   font-size: 10px;
   font-family: Lexend Mega, sans-serif;
+
 }
 
 .component_logo{
@@ -160,31 +188,47 @@ html {
   margin: 5px;
 }
 
-.feature{
+.feature_image{
   width: 90%;
   margin-left: 5%;
+}
+
+.feature_text{
+  margin-top: -30%;
+  margin-bottom: 20%;
+  margin-left: 6%;
+  font-size: 110%;
+  color: white;
 }
 
 .feature-content{
   font-weight: normal;
   display: inline-block;
-  width: 300px;
+  width: 350px;
   margin-left: 9%;
-  font-size: 170%;
+  font-size: 190%;
+}
+
+.feature-img{
+  width: 90%;
+  margin-left: 5%;
+  overflow: auto;
 }
 
 .feature-button{
   font-family: Lexend Mega, sans-serif;
-  font-weight: normal;
-  font-size: 54%;
+  transform: translate(-187%, 150%);
+  /* -ms-transform: translate(-50%, -50%); */
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  width: 180px;
-  height: 40px;
-  margin-left: 9%;
-  text-align: center;
-  padding-top: 13px;
+  color: rgb(0, 0, 0);
+  font-size: 54%;
+  padding: 17px 24px;
+  border: none;
+  cursor: pointer;
+  filter: alpha(opacity=90);
 }
+
+.feature-button:hover {opacity: 0.7}
 
 .component_section{
   background-color: rgb(202, 202, 202);
@@ -196,13 +240,16 @@ html {
 
 .section{
   background-color: #fffbf7;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .section__card{
   width: 90%;
   margin-left: 5%;
 }
-
 
 .section{
   display: grid;
@@ -215,22 +262,44 @@ html {
   font-size: 90%;
   display: flex;
   justify-content: space-around;
+  margin-top: -20%;
     
 }
 
 .section__card-context{
   font-family: Lexend Mega, sans-serif;
   font-weight: normal;
-  font-size: 54%;
+  font-size: 60%;
   display: flex;
   justify-content: space-around;
+  margin-top: -10%;
 } 
 
 .section__card-img{
-  width: 50%;
+  width: 70%;
   margin: auto;
-  margin-left: 30%;
+  margin-left: 15%;
+}
 
+.arrow li{
+  list-style: none;
+}
+
+.arrow{
+  margin-left: 295%;
+  margin-top: -60%;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 20px;
+  padding-left: 2%;
+}
+
+.feature__2_text{
+  margin-top: -40%;
+  margin-bottom: 20%;
+  margin-left: 6%;
+  font-size: 110%;
+  color: white;
 }
 
 .feature__2-title{
@@ -245,21 +314,34 @@ html {
 .feature__2-context{
   width: 340px;
   margin-left: 12%;
-  font-size: 85%;
+  font-size: 80%;
   line-height: 1.5;
 }
 
-.feature-button{
+
+.feature__2-button{
   font-family: Lexend Mega, sans-serif;
-  font-weight: normal;
-  font-size: 54%;
+  transform: translate(48%, -10%);
+  /* -ms-transform: translate(-50%, -50%); */
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  width: 330px;
-  height: 40px;
-  margin-left: 12%;
-  text-align: center;
-  padding-top: 13px;
+  color: rgb(0, 0, 0);
+  font-size: 54%;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  width: 25%;  
+  filter: alpha(opacity=90);
+  margin-bottom: 3%;
+}
+
+
+.feature__2-button:hover {opacity: 0.7}
+
+
+.feature__2-img{
+  width: 90%;
+  margin-left: 5%;
+  overflow: auto;
 }
 
 .component_article{
@@ -300,6 +382,7 @@ html {
   font-size: 150%;
   margin-left: 17%;
   margin-top: 50px;
+  margin-bottom: 5%;
 }
 
 
@@ -333,6 +416,7 @@ html {
   /* margin-left: 2%; */
   display: flex;
   float: left;
+  margin-bottom: 18%;
 }
 
 .guide__card{
@@ -355,18 +439,41 @@ html {
 .article__guide-context{
   font-size: 12px;
   margin-top: 15%;
+  
 }
 
 .article__guide-button{
   margin-top: 9%;
   font-weight: normal;
   font-size: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .article__guide-buttons{
   margin-top: 14%;
   font-weight: normal;
   font-size: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+
+.article__guide-button:hover {
+  text-decoration:underline;
+}
+
+.article__guide-buttons:hover {
+  text-decoration:underline;
+}
+
+
+.feature__3-text{
+  margin-top: -35%;
+  margin-bottom: 20%;
+  margin-left: 1%;
+  font-size: 110%;
+  color: white;
 }
 
 .feature__3-img{
@@ -382,16 +489,20 @@ html {
 
 .feature__3-button{
   font-family: Lexend Mega, sans-serif;
-  font-weight: normal;
-  font-size: 54%;
+  transform: translate(-106%, 150%);
+  /* -ms-transform: translate(-50%, -50%); */
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  width: 300px;
-  height: 40px;
-  margin-left: 9%;
-  text-align: center;
-  padding-top: 13px;
+  color: rgb(0, 0, 0);
+  font-size: 54%;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  width: 25%;  
+  filter: alpha(opacity=90);
+  margin-bottom: 3%;
 }
+
+.feature__3-button:hover {opacity: 0.7}
 
 .component_footer{
   background-color: rgb(202, 202, 202);
