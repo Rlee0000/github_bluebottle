@@ -238,13 +238,13 @@ html{
   .article-button{
     font-family: Lexend Mega, sans-serif;
     font-weight: normal;
-    font-size: 50%;
+    font-size: 65%;
     background-color: rgb(255, 255, 255);
     border: .5px solid black;
     margin-left: 9%;
     /* text-align: center */
     text-decoration: none;
-    padding: 15px 55px;
+    padding: 20px 60px;
     color: black;
     filter: alpha(opacity=90);
   }
