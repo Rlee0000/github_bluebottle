@@ -132,8 +132,8 @@ html{
     margin-left: 290%;
     margin-top: -60%;
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    height: 20px;
+    /* width: 80%; */
+    /* height: 20px; */
     list-style: none;
 }
 
